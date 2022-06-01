@@ -1,0 +1,19 @@
+[{
+    "id": 1,
+    "title" :"SpaceX Launches",
+    "technologies": ["React", "Chakra UI"],
+    "resume": "Datos de los lanzamientos de SpaceX",
+    "img": "https://live.staticflickr.com/65535/52113501201_a78f4b3fb5_b.jpg",
+    "github": "https://github.com/jodemelol/SpaceX-Launches",
+    "link": "https://space-x-launches-liart.vercel.app/"
+},
+{
+    "id": 2,
+    "title" :"Shortly",
+    "technologies": ["React", "Chakra UI"],
+    "resume": "Acortador de urls",
+    "img": "https://live.staticflickr.com/65535/52114038818_da438f45a1_b.jpg",
+    "github": "https://github.com/jodemelol/Url-Shortener",
+    "link": "https://url-shortener-blue.vercel.app/"
+}
+]

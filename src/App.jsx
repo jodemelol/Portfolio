@@ -38,7 +38,7 @@ export function App() {
         />
         <Name/>
       </Box>
-      <Box bg="primary" w="full" h="auto">
+      <Box bg="second" w="full" h="auto">
         <About aboutSec={aboutSec} />
         <Projects projectsSec={projectsSec} />
         <Footer contactSec={contactSec} />

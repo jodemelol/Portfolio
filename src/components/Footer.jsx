@@ -1,4 +1,6 @@
 import {
+  Alert,
+  AlertIcon,
   Box,
   Button,
   FormControl,
@@ -8,15 +10,19 @@ import {
   Input,
   Textarea,
 } from "@chakra-ui/react";
-import { useForm } from "@formspree/react";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { useForm } from "../hooks/useForm";
 import image2 from "../images/sky1.jpg";
 
-
+const initialForm = {
+  name: "",
+  email: "",
+  message: "",
+};
 
 export function Footer({ contactSec }) {
-  const [submit, setSubmit] = useForm("meqnlyer"); 
-  
+  const { form, response, handleChange, handleSubmit } = useForm(initialForm);
+
   return (
     <Box
       bgImage={image2}
@@ -36,7 +42,7 @@ export function Footer({ contactSec }) {
         >
           Contacto
         </Heading>
-        <form onSubmit={setSubmit}>
+        <form onSubmit={handleSubmit}>
           <FormControl isRequired>
             <Input
               placeholder="Name"
@@ -45,7 +51,8 @@ export function Footer({ contactSec }) {
               name="name"
               variant="flushed"
               autoComplete="off"
-              
+              value={form.name}
+              onChange={handleChange}
             />
           </FormControl>
           <FormControl isRequired>
@@ -56,15 +63,19 @@ export function Footer({ contactSec }) {
               name="email"
               variant="flushed"
               autoComplete="off"
+              value={form.email}
+              onChange={handleChange}
             />
           </FormControl>
           <FormControl isRequired>
             <Textarea
-              placeholder="Message..."
+              placeholder="Message"
               id="message"
               name="message"
               variant="flushed"
               autoComplete="off"
+              value={form.message}
+              onChange={handleChange}
             />
           </FormControl>
 
@@ -74,6 +85,12 @@ export function Footer({ contactSec }) {
             </Button>
           </Box>
         </form>
+        {response && (
+          <Alert status="success" variant='solid'>
+            <AlertIcon />
+            Data uploaded to the server. Fire on!
+          </Alert>
+        )}
       </Box>
 
       <HStack justifyContent="center" spacing={8} py={16}>

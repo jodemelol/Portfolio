@@ -12,5 +12,6 @@ export default extendTheme({
     colors:{
         primary: "#222222",
         instagram: "linear(to-l, #7928CA, #FF0080)",
+        second:"#1A1A1B"
     }, 
 })

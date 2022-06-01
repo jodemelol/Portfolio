@@ -86,9 +86,9 @@ export function Footer({ contactSec }) {
           </Box>
         </form>
         {response && (
-          <Alert status="success" variant='solid'>
+          <Alert status="success" variant="solid">
             <AlertIcon />
-            Data uploaded to the server. Fire on!
+            Correo enviado exitosamente, gracias por contactarme.
           </Alert>
         )}
       </Box>

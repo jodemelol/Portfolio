@@ -15,5 +15,14 @@
     "img": "https://live.staticflickr.com/65535/52114038818_da438f45a1_b.jpg",
     "github": "https://github.com/jodemelol/Url-Shortener",
     "link": "https://url-shortener-blue.vercel.app/"
+},
+{
+    "id": 3,
+    "title" :"TodoList",
+    "technologies": ["React", "Chakra UI"],
+    "resume": "Lista de tareas",
+    "img": "https://live.staticflickr.com/65535/52133126691_56293b4a52_h.jpg",
+    "github": "https://github.com/jodemelol/todo-list-v3",
+    "link": "https://todo-list-nine-gamma.vercel.app/"
 }
 ]

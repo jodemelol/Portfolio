@@ -24,5 +24,15 @@
     "img": "https://live.staticflickr.com/65535/52133126691_56293b4a52_h.jpg",
     "github": "https://github.com/jodemelol/todo-list-v3",
     "link": "https://todo-list-nine-gamma.vercel.app/"
+},
+{
+    "id": 4,
+    "title" :"Countries",
+    "technologies": ["React", "Chakra UI"],
+    "resume": "Paises de todo el mundo con su informacion",
+    "img": "https://live.staticflickr.com/65535/52232446821_b1244ff73d_h.jpg",
+    "github": "https://github.com/jodemelol/Countries",
+    "link": "https://countries-gamma-jade.vercel.app/"
 }
+
 ]
